@@ -16,8 +16,7 @@ Currently im a DevOps/system-administrator at IT10 a work cooperative located in
   
 
 <br/>  
-- 🔭 I’m currently working on IT10coop...   
-- 🌱 I’m currently learning React ...
+- 🌱 I’m currently learning React
 
 </td></tr></table>  
 
