@@ -14,7 +14,7 @@
 
 
 ### About Me  
-Currently im a DevOps/system-administrator at IT10 a work cooperative located in Río Cuarto, Argentina. My roles include servers and networks deploy and maintenace. This year objective is to become a full stack developer  
+Currently im a DevOps/system-administrator at IT10 a work cooperative located in Río Cuarto, Argentina. My roles include servers and networks deployment and maintenace. This year objective is to become a full stack developer  
   
 
 <br/>  
