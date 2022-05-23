@@ -14,11 +14,11 @@
 
 
 ### About Me  
-Currently im a DevOps/system-administrator at IT10 a work cooperative located in Río Cuarto, Argentina. My roles include servers and networks deployment and maintenace. This year objective is to become a full stack developer  
+Currently im a developer at IT10 a work cooperative located in Río Cuarto, Argentina. My roles include backend development, servers deploy and maintenance . This year objective is to become a full stack developer  
   
 
 <br/>  
-- 🌱 I’m currently learning React
+- 🌱 I’m currently developing as a Backend developer
 
 </td></tr></table>  
 
