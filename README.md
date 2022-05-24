@@ -18,7 +18,7 @@ Currently im a developer at IT10 a work cooperative located in Río Cuarto, Arge
   
 
 <br/>  
-- 🌱 I’m currently developing as a Backend developer
+- 🌱 I’m currently working as Backend developer
 
 </td></tr></table>  
 
