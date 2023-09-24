@@ -17,6 +17,7 @@ btnSwitch.addEventListener("click", () => {
   document.getElementById("custom-btn2").classList.toggle("custom-btn--dark");
   darkerClass("card");
   toggleDescriptionDarkClass();
+  toggleDateColor();
   // toggleBackgroundCards();
 });
 
@@ -58,13 +59,23 @@ function toggleDescriptionDarkClass() {
 function toggleBackgroundCards() {
   let cards = document.getElementsByClassName("card");
   let cardsArray = Array.from(cards);
-  console.log(cardsArray);
-
   cardsArray.forEach(function(element) {
       if (element.classList.contains("card__dark")) {
           element.classList.remove("card__dark");
       } else {
           element.classList.add("card__dark");
+      }
+  });
+}
+
+function toggleDateColor() {
+  let role = document.getElementsByClassName("role");
+  let roles = Array.from(role);
+  roles.forEach(function(element) {
+      if (element.classList.contains("role__dark")) {
+          element.classList.remove("role__dark");
+      } else {
+          element.classList.add("role__dark");
       }
   });
 }

@@ -326,6 +326,7 @@ body {
                     font-size: 28px;
                     text-transform: uppercase;
 
+
                     @include desktop {
                         font-size: 48px;
                         line-height: 48px;
@@ -364,6 +365,7 @@ body {
                 align-items: center;
                 justify-content: center;
                 margin-top: 3rem;
+                margin-bottom: 15px;
                 
                 @include desktop {
                     margin-left: 40px;
@@ -373,8 +375,10 @@ body {
             }
 
             .info-contact {
-                text-align: center;
-
+                text-align: left;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 0;
                 @include desktop {
                     text-align: left;
                 }
@@ -430,14 +434,16 @@ body {
                             border-radius: 12%;
 
                             @include desktop {
-                                max-width: 520px;
+                                max-width: 600px;
                             }
                         }
                     }
-
-
                     .btnWrapper {
                         margin-top: 20px;
+                        margin-bottom: 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                     }
                 }
 
@@ -453,6 +459,10 @@ body {
                         font-size: 35px;
                         font-weight: 800;
                         text-align: left;
+                        h3 {
+                            line-height: 42px;
+                        }
+
 
                         .mini {
                             font-size: 18px;
@@ -697,6 +707,7 @@ body {
             max-height: 465px;
             display: flex;
             flex-direction: column;
+            font-size: 15px;
             &__dark {
                 background-color: #55527C;
             }
@@ -719,8 +730,13 @@ body {
                         font-size: 19px;
                         font-weight: 700px;
                     }
+                
+                &__dark {
+                    span {
+                        color: #cac8f1;
+                    }
                 }
-
+            }
             .company {}
         }
     }
