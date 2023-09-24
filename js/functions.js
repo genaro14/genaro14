@@ -1,7 +1,7 @@
 function darkerClass(className) {
   var elements = document.getElementsByClassName(className);
   for (let a of elements) {
-    a.classList.toggle("dark");
+    a.classList.toggle( className + "__dark");
   }
 }
 const btnSwitch = document.querySelector("#switch");
@@ -15,6 +15,8 @@ btnSwitch.addEventListener("click", () => {
   document.getElementById("mainpart").classList.toggle("mainpart--dark");
   document.getElementById("custom-btn").classList.toggle("custom-btn--dark");
   darkerClass("card");
+  toggleDescriptionDarkClass();
+  // toggleBackgroundCards();
 });
 
 //GO TOP BTN:
@@ -38,3 +40,31 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+function toggleDescriptionDarkClass() {
+  let elements = document.getElementsByClassName("description");
+  let elementsArray = Array.from(elements);
+
+  elementsArray.forEach(function(element) {
+      if (element.classList.contains("description__dark")) {
+          element.classList.remove("description__dark");
+      } else {
+          element.classList.add("description__dark");
+      }
+  });
+}
+
+function toggleBackgroundCards() {
+  let cards = document.getElementsByClassName("card");
+  let cardsArray = Array.from(cards);
+  console.log(cardsArray);
+
+  cardsArray.forEach(function(element) {
+      if (element.classList.contains("card__dark")) {
+          element.classList.remove("card__dark");
+      } else {
+          element.classList.add("card__dark");
+      }
+  });
+}
+
