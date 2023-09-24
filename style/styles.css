@@ -319,6 +319,9 @@ body {
     font-size: 18px;
   }
 }
+.base-wrapper .mainpart__content .hero .description__dark {
+  color: #ffffff;
+}
 .base-wrapper .mainpart__content .buttons {
   display: flex;
   align-items: center;
@@ -564,6 +567,9 @@ body {
   float: left;
   opacity: 0.8;
 }
+.base-wrapper .mainpart__expertise .tech .inner .list_inner img {
+  margin-top: 33px;
+}
 .base-wrapper .mainpart__expertise .tech .inner .full_link {
   position: absolute;
   top: 0px;
@@ -590,20 +596,25 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-height: 465px;
+  display: flex;
+  flex-direction: column;
+}
+.base-wrapper .mainpart .card__dark {
+  background-color: #55527C;
 }
 .base-wrapper .mainpart .card .info {
   width: 100%;
   float: left;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-betweuen;
   margin-bottom: 16px;
 }
-.base-wrapper .mainpart .card .info .role span {
+.base-wrapper .mainpart .card .role span {
   color: purple;
   margin-bottom: 3px;
   font-weight: 500px;
 }
-.base-wrapper .mainpart .card .info .role h3 {
+.base-wrapper .mainpart .card .role h3 {
   font-size: 19px;
   font-weight: 700px;
 }

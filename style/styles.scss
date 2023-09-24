@@ -349,7 +349,9 @@ body {
                     @include desktop {
                         max-width: 425px;
                         font-size: 18px;
-
+                    }
+                    &__dark {
+                        color: #ffffff;
                     }
                 }
             }
@@ -653,6 +655,9 @@ body {
                         clear: both;
                         float: left;
                         opacity: .8;
+                        img { 
+                            margin-top: 33px;
+                        }
                     }
 
                     .full_link {
@@ -686,13 +691,18 @@ body {
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             max-height: 465px;
-
+            display: flex;
+            flex-direction: column;
+            &__dark {
+                background-color: #55527C;
+            }
             .info {
                 width: 100%;
                 float: left;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-betweuen;
                 margin-bottom: 16px;
+            }
 
                 .role {
                     span {
@@ -706,7 +716,6 @@ body {
                         font-weight: 700px;
                     }
                 }
-            }
 
             .company {}
         }
