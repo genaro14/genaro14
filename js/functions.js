@@ -14,6 +14,7 @@ btnSwitch.addEventListener("click", () => {
   document.getElementById("span-italic").classList.toggle("span--dark");
   document.getElementById("mainpart").classList.toggle("mainpart--dark");
   document.getElementById("custom-btn").classList.toggle("custom-btn--dark");
+  document.getElementById("custom-btn2").classList.toggle("custom-btn--dark");
   darkerClass("card");
   toggleDescriptionDarkClass();
   // toggleBackgroundCards();

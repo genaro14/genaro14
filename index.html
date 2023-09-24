@@ -103,7 +103,7 @@
                     <div class="hero">
                         <div class="imageWrapper">
                             <img class="image"
-                                src="https://raw.githubusercontent.com/banzai-ko/portfolio-Frontend/main/material/One-Punch-Man.jpg"
+                                src="./assets/profile.jpg"
                                 alt="Saitama Picture" />
                         </div>
                         <div class="info">
@@ -121,8 +121,7 @@
                     </div>
                     <div class="buttons">
                         <button id="custom-btn" class="custom-btn" target="_blank"><a
-                                href="https://github.com/genaro14/portfolio-frontend/tree/main/minimalCV">Download
-                                CV</a>
+                                href="https://github.com/genaro14/genaro14/blob/main/CV.pdf">Ver Curriculum</a>
                         </button>
                     </div>
                     <div class="info-contact">
@@ -141,7 +140,7 @@
                             </div>
 
                             <div class="btnWrapper">
-                                <button class="custom-btn">Some Contact Form</button>
+                                <button id="custom-btn2" class="custom-btn">Descarga CV</button>
                             </div>
                         </div>
                         <div class="right">
@@ -294,34 +293,35 @@
             <div class="footer__content">
                 <div class="heading">
                     <h2 class="title">Contacto</h2>
-                    <h3 class="subtitle">Get in Touch</h3>
+                    <!-- <h3 class="subtitle">Get in Touch</h3> -->
                 </div>
                 <div class="row">
                     <div class="col-md-7">
                         <div class="contact-area">
                             <div class="contact-area__left">
-                                <div class="contact-form">
-                                    <div class="col-md-12">
-                                        <input type="text" name="subject" class="contact-form input"
-                                            placeholder="Subject">
+                                <form action="mailto:genaropennone@gmail.com" method="post" enctype="text/plain">
+                                    <div class="contact-form">
+                                        <div class="col-md-12">
+                                            <input type="text" name="subject" class="contact-form input"
+                                                placeholder="Subject">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="text" name="name" class="contact-form input" placeholder="Name">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="email" name="mail" class="contact-form input" placeholder="Mail">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea class="contact-form input" name="message"
+                                                placeholder="Leave Message"></textarea>
+                                        </div>
+                                        <div class="btnWrapper">
+                                            <button type="submit" id="custom-btn" class="custom-btn">
+                                                Enviar
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <input type="text" name="name" class="contact-form input" placeholder="Name">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="email" name="mail" class="contact-form input" placeholder="Mail">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <textarea class="contact-form input" name="message"
-                                            placeholder="Leave Message"></textarea>
-                                    </div>
-                                    <div class="btnWrapper">
-                                        <button type="submit" id="custom-btn" class="custom-btn">
-                                            Enviar
-                                        </button>
-                                    </div>
-                                </div>
-
+                                </form>
                             </div>
                             <div class="contact-area__right">
                                 <ul>
