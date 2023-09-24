@@ -312,6 +312,8 @@ body {
 .base-wrapper .mainpart__content .hero .description {
   font-size: 14px;
   max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 1024px) {
   .base-wrapper .mainpart__content .hero .description {
@@ -330,6 +332,7 @@ body {
 }
 @media (min-width: 1024px) {
   .base-wrapper .mainpart__content .buttons {
+    margin-left: 40px;
     justify-content: flex-start;
   }
 }
