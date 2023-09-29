@@ -116,7 +116,7 @@ body {
   transition: 0.9s ease all;
   z-index: 1;
 }
-@media (max-width: 1040px) {
+@media (max-width: 1023px) {
   .base-wrapper__page .sidebar {
     display: none;
   }
@@ -270,10 +270,20 @@ body {
     width: calc(100% - 236px);
   }
 }
+@media (min-width: 1024px) {
+  .base-wrapper .mainpart .navbar {
+    display: none;
+  }
+}
 .base-wrapper .mainpart #navbar {
-  background-color: #333;
+  background-color: #343a40;
   height: 66px;
   overflow: visible;
+}
+@media (max-width: 1023px) {
+  .base-wrapper .mainpart #navbar {
+    display: none;
+  }
 }
 .base-wrapper .mainpart #navbar a {
   float: left;
@@ -518,11 +528,11 @@ body {
 }
 .base-wrapper .mainpart__about .biography .right {
   max-width: 100%;
+  margin-left: 20px;
 }
 @media (min-width: 1024px) {
   .base-wrapper .mainpart__about .biography .right {
     max-width: 50%;
-    margin-left: 20px;
   }
 }
 .base-wrapper .mainpart__about .biography .right .title {
@@ -563,6 +573,9 @@ body {
   .base-wrapper .mainpart__expertise {
     margin-left: 20px;
   }
+}
+.base-wrapper .mainpart__expertise .title {
+  margin-left: 20px;
 }
 .base-wrapper .mainpart__expertise .block-title h2 {
   font-family: "Rubik", sans-serif;

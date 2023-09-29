@@ -298,12 +298,20 @@ body {
             left: 243px;
             width: calc(100% - 236px);
         }
+        .navbar {
+            @include desktop {
+                display: none;
+            };
+        }
         /* Style the navbar */
         #navbar {
             // overflow: hidden;
-            background-color: #333;
+            background-color: #343a40;
             height: 66px;
             overflow: visible;
+            @include mobile{
+                display: none;
+            }
         }
         
         /* Navbar links */
@@ -575,10 +583,10 @@ body {
 
                 .right {
                     max-width: 100%;
+                    margin-left: 20px;
 
                     @include desktop {
                         max-width: 50%;
-                        margin-left: 20px;
                     }
 
                     .title {
@@ -631,7 +639,7 @@ body {
             }
 
             .title {
-                //something
+                margin-left: 20px;
             }
 
             .block-title {
