@@ -18,7 +18,12 @@ body {
     display: flex;
     flex-direction: column;
     overflow-y: disabled;
-
+    .translate {
+        display: none;
+    }
+    .translate.active {
+        display: block;
+      }
     &__page {
         width: 100%;
         height: auto;
@@ -34,7 +39,79 @@ body {
             text-decoration: none;
             /* no underline */
         }
+        // .translate {
+        //     display: none;
+        // }
+        // .translate.active {
+        //     display: block;
+        //   }
+          .switch-lang {
+            width: 150px;
+            text-align: left;
+            cursor: pointer;
+            z-index: 999;
+            // position: absolute;
+            margin-top: 5px;   
+            margin-left: 20px;   
+            left: 20px;
+            overflow: visible;
+          }
+          .switch-lang:hover .lang-dropdown {
+            display: block;
+          }
+          .switcher-link {
+            color: #fff;
+          }
+          .switcher-link:hover {
+            color: #fff;
+          }
+          .current-lang {
+            background: #dedde4;
+            padding: 3px 5px 3px 5px;
+            border-radius: 5px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+          }
+          .lang-flag {
+            width: 20px;
+            display: inline-block;
+          }
+          .lang-text {
+            margin-left: 5px;
+          }
+          .lang-dropdown {
+            display: none;
+            background: #dedde4;
+            border-radius: 5px;
+          }
+          .selecting-lang {
+            padding: 3px 5px 3px 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+          }
+          .selecting-lang:hover {
+            background: #b3b3b8;
 
+          }
+          ul > :first-child {
+            border-radius: 5px 5px 0px 0px;
+          }
+          ul > :last-child {
+            border-radius: 0px 0px 5px 5px;
+          }
+          li {
+            list-style-type: none;
+          }
+          .menu-arrow {
+            display: inline-block;
+            width: 10px;
+            margin-left: 10px;
+            vertical-align: top;
+            margin-top: 6px;
+          }
+          
         .sidebar {
             @include mobile {
                 display: none;
@@ -195,6 +272,9 @@ body {
         &--dark {
             background-color: #55527C;
         }
+        p {
+            margin: 0;
+        }
     }
 
     .mainpart {
@@ -218,12 +298,55 @@ body {
             left: 243px;
             width: calc(100% - 236px);
         }
+        /* Style the navbar */
+        #navbar {
+            // overflow: hidden;
+            background-color: #333;
+            height: 66px;
+            overflow: visible;
+        }
+        
+        /* Navbar links */
+        #navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+        
+        /* Page content */
+        .content {
+            padding: 16px;
+        }
+        
+        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex: row;
+        }
+        
+        /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+        .sticky + .content {
+            padding-top: 60px;
+        }
 
         .switchWrapper {
+            // float: right;
             height: 32px;
-            position: absolute;
-            right: 3%;
-            margin-top: 10px;
+            // position: absolute;
+            // right: 3%;
+            // position: relative;
+            // right: -58%;
+            // margin-top: 10px;
+            align-self: center;
+            left: -21%;
+            position: relative;
 
             .switch {
                 background: #e6e8ed;
@@ -425,7 +548,7 @@ body {
                     }
 
                     .fineWrapper {
-                        width: auto;
+                        width: 100%;
                         border-radius: 8%;
 
                         .fine {
@@ -434,7 +557,7 @@ body {
                             border-radius: 12%;
 
                             @include desktop {
-                                max-width: 600px;
+                                max-width: 100%;
                             }
                         }
                     }
@@ -444,6 +567,9 @@ body {
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                    @include desktop{
+                        justify-content: flex-start ;
+                    }
                     }
                 }
 
@@ -473,7 +599,7 @@ body {
 
                         .job {
                             font-size: 17px;
-                            text-align: center;
+                            // text-align: center;
                             width: 100%;
                             font-family: 'Rubik', sans-serif;
                         }

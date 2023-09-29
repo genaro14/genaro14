@@ -21,6 +21,12 @@ body {
   flex-direction: column;
   overflow-y: disabled;
 }
+.base-wrapper .translate {
+  display: none;
+}
+.base-wrapper .translate.active {
+  display: block;
+}
 .base-wrapper__page {
   width: 100%;
   height: auto;
@@ -34,6 +40,70 @@ body {
   color: inherit;
   text-decoration: none;
   /* no underline */
+}
+.base-wrapper__page .switch-lang {
+  width: 150px;
+  text-align: left;
+  cursor: pointer;
+  z-index: 999;
+  margin-top: 5px;
+  margin-left: 20px;
+  left: 20px;
+  overflow: visible;
+}
+.base-wrapper__page .switch-lang:hover .lang-dropdown {
+  display: block;
+}
+.base-wrapper__page .switcher-link {
+  color: #fff;
+}
+.base-wrapper__page .switcher-link:hover {
+  color: #fff;
+}
+.base-wrapper__page .current-lang {
+  background: #dedde4;
+  padding: 3px 5px 3px 5px;
+  border-radius: 5px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+.base-wrapper__page .lang-flag {
+  width: 20px;
+  display: inline-block;
+}
+.base-wrapper__page .lang-text {
+  margin-left: 5px;
+}
+.base-wrapper__page .lang-dropdown {
+  display: none;
+  background: #dedde4;
+  border-radius: 5px;
+}
+.base-wrapper__page .selecting-lang {
+  padding: 3px 5px 3px 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.base-wrapper__page .selecting-lang:hover {
+  background: #b3b3b8;
+}
+.base-wrapper__page ul > :first-child {
+  border-radius: 5px 5px 0px 0px;
+}
+.base-wrapper__page ul > :last-child {
+  border-radius: 0px 0px 5px 5px;
+}
+.base-wrapper__page li {
+  list-style-type: none;
+}
+.base-wrapper__page .menu-arrow {
+  display: inline-block;
+  width: 10px;
+  margin-left: 10px;
+  vertical-align: top;
+  margin-top: 6px;
 }
 .base-wrapper__page .sidebar {
   width: 250px;
@@ -170,6 +240,9 @@ body {
 .base-wrapper .custom-btn--dark {
   background-color: #55527C;
 }
+.base-wrapper .custom-btn p {
+  margin: 0;
+}
 .base-wrapper .mainpart {
   position: relative;
   left: 0;
@@ -181,6 +254,11 @@ body {
   background-color: #f6f5fd;
   opacity: 1;
   overflow: hidden;
+  /* Style the navbar */
+  /* Navbar links */
+  /* Page content */
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 }
 .base-wrapper .mainpart--dark {
   color: #F9F7F7;
@@ -192,11 +270,38 @@ body {
     width: calc(100% - 236px);
   }
 }
+.base-wrapper .mainpart #navbar {
+  background-color: #333;
+  height: 66px;
+  overflow: visible;
+}
+.base-wrapper .mainpart #navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+.base-wrapper .mainpart .content {
+  padding: 16px;
+}
+.base-wrapper .mainpart .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex: row;
+}
+.base-wrapper .mainpart .sticky + .content {
+  padding-top: 60px;
+}
 .base-wrapper .mainpart .switchWrapper {
   height: 32px;
-  position: absolute;
-  right: 3%;
-  margin-top: 10px;
+  align-self: center;
+  left: -21%;
+  position: relative;
 }
 .base-wrapper .mainpart .switchWrapper .switch {
   background: #e6e8ed;
@@ -329,6 +434,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 3rem;
+  margin-bottom: 15px;
 }
 @media (min-width: 1024px) {
   .base-wrapper .mainpart__content .buttons {
@@ -386,7 +492,7 @@ body {
   }
 }
 .base-wrapper .mainpart__about .biography .left .fineWrapper {
-  width: auto;
+  width: 100%;
   border-radius: 8%;
 }
 .base-wrapper .mainpart__about .biography .left .fineWrapper .fine {
@@ -395,7 +501,7 @@ body {
 }
 @media (min-width: 1024px) {
   .base-wrapper .mainpart__about .biography .left .fineWrapper .fine {
-    max-width: 520px;
+    max-width: 100%;
   }
 }
 .base-wrapper .mainpart__about .biography .left .btnWrapper {
@@ -404,6 +510,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 1024px) {
+  .base-wrapper .mainpart__about .biography .left .btnWrapper {
+    justify-content: flex-start;
+  }
 }
 .base-wrapper .mainpart__about .biography .right {
   max-width: 100%;
@@ -430,7 +541,6 @@ body {
 }
 .base-wrapper .mainpart__about .biography .right .title .job {
   font-size: 17px;
-  text-align: center;
   width: 100%;
   font-family: "Rubik", sans-serif;
 }
