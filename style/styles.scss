@@ -55,6 +55,9 @@ body {
             margin-left: 20px;   
             left: 20px;
             overflow: visible;
+            p {
+                margin-top: 10%;
+            }
           }
           .switch-lang:hover .lang-dropdown {
             display: block;
@@ -78,7 +81,7 @@ body {
             display: inline-block;
           }
           .lang-text {
-            margin-left: 5px;
+            margin-left: 14px;
           }
           .lang-dropdown {
             display: none;
