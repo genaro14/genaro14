@@ -20,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow-y: disabled;
+  max-width: 100%;
 }
 .base-wrapper .translate {
   display: none;
@@ -393,9 +394,9 @@ body {
 }
 .base-wrapper .mainpart__content .hero .imageWrapper {
   width: auto;
-  margin-top: 30px;
-  margin-left: 0;
-  margin-right: 30px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .base-wrapper .mainpart__content .hero .imageWrapper .image {
   border-radius: 100%;
@@ -462,10 +463,24 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-left: 0;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
 }
 @media (min-width: 1024px) {
   .base-wrapper .mainpart__content .info-contact {
     text-align: left;
+    margin-right: auto;
+    margin-left: 0;
+    font-size: 20px;
+  }
+}
+.base-wrapper .mainpart__content .info-contact ul {
+  padding-left: 10px;
+}
+@media (min-width: 1024px) {
+  .base-wrapper .mainpart__content .info-contact ul {
+    padding-left: 40px;
   }
 }
 .base-wrapper .mainpart__content .info-contact li {
@@ -474,6 +489,21 @@ body {
 }
 .base-wrapper .mainpart__content .info-contact i {
   margin-right: 10px;
+}
+.base-wrapper .mainpart__content .info-contact ul li a,
+.base-wrapper .mainpart__content .info-contact ul li i,
+.base-wrapper .mainpart__content .info-contact ul li p {
+  display: inline;
+}
+@media (max-width: 1023px) {
+  .base-wrapper .mainpart__content .info-contact .mail-view {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 390px) {
+  .base-wrapper .mainpart__content .info-contact .mail-view {
+    font-size: inherit;
+  }
 }
 .base-wrapper .mainpart__about {
   display: flex;
@@ -838,6 +868,25 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
+}
+.footer__content .contact-area__right ul {
+  list-style-type: none;
+}
+.footer__content .contact-area__right ul li a,
+.footer__content .contact-area__right ul li i,
+.footer__content .contact-area__right ul li p {
+  display: inline;
+}
+@media (max-width: 1023px) {
+  .footer__content .contact-area__right ul li .email-view {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 390px) {
+  .footer__content .contact-area__right ul li .email-view {
+    font-size: inherit;
+  }
 }
 @media (min-width: 1024px) {
   .footer__content .contact-area__right {
