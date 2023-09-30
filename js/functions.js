@@ -164,3 +164,8 @@ let navPos = navbar.getBoundingClientRect().top;
     window.addEventListener("scroll", e => {
       scrollPos = window.scrollY;
     });
+
+let menu = document.getElementById("hamburguer");
+window.addEventListener("click", show => {
+  console.log('Dropdown Menu');
+});

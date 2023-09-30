@@ -155,12 +155,14 @@ body {
 .base-wrapper__page .sidebar .author_name span {
   position: relative;
   font-style: italic;
-  font-size: 88px;
   font-family: Kristi;
   line-height: 1;
   color: rgba(19, 15, 73, 0.07);
   display: block;
   font-size: 50px;
+}
+.base-wrapper__page .sidebar .author_name #span-italic {
+  font-size: 88px;
 }
 .base-wrapper__page .sidebar .author_name .span--dark {
   color: rgba(236, 235, 242, 0.15);
@@ -168,7 +170,7 @@ body {
 .base-wrapper__page .sidebar .author_name .back_author {
   font-size: 18px;
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -781,6 +783,7 @@ body {
   color: #000;
 }
 .footer__content .heading {
+  margin-top: 10px;
   width: 100%;
   text-align: center;
 }
@@ -808,12 +811,18 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.footer__content .contact-area ul {
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (min-width: 1024px) {
   .footer__content .contact-area {
     flex-direction: row;
   }
 }
 .footer__content .contact-area .col-md-12 {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 70%;
   height: 80px;
 }
@@ -863,7 +872,7 @@ body {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .footer__content .contact-form .btnWrapper {
-  width: 70%;
+  width: 100%;
   display: flex;
   margin-top: 20px;
   align-content: center;
