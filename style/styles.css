@@ -377,6 +377,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 1024px) {
   .base-wrapper .mainpart__content .hero {
@@ -395,8 +397,6 @@ body {
 .base-wrapper .mainpart__content .hero .imageWrapper {
   width: auto;
   margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .base-wrapper .mainpart__content .hero .imageWrapper .image {
   border-radius: 100%;
