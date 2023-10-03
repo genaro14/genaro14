@@ -2,8 +2,8 @@
 
 Hi!,  I'm a **Fullstack developer**, committed to contributing to innovative and efficient development teams.  &nbsp;    
 
-You probably want to go see my page here: [Site](https://genaro14.github.io/genaro14/), &nbsp;    
-or you can contact me on: [genaropennone@gmail.com](genaropennone@gmail.com) &nbsp;
+You probably want to go see my page here: &#12299;[Site](https://genaro14.github.io/genaro14/),    
+or you can contact me on: [genaropennone@gmail.com](mailto:genaropennone@gmail.com)  
 ----
 ### Some technologies i like to use:
 ![languages](https://img.shields.io/static/v1?label=&message=languages:&color=111&style=flat-square)
