@@ -47,11 +47,14 @@
         <div class="collapse" id="navbarToggleExternalContent">
           <div class="bg-dark p-4">
             <h4 class="text-white">Language Selector:</h4>
-            <p class="text-white">English</p>
-            <p class="text-white">Spanish</p>
-            <h4 class="text-white">Mode:</h4>
-            <p class="text-white">Light</p>
-            <p class="text-white">Dark</p>
+            <ul class="language-menu" id="language-menu">
+                <li><a href="#" data-lang="en">English</a></li>
+                <li><a href="#" data-lang="es">Español</a></li>
+            </ul>
+            <ul class="dark-mode" id="dark-mode">
+                <li><a href="#" >Light</a></li>
+                <li><a href="#" >Dark</a></li>
+            </ul>
             
           </div>
         </div>
@@ -208,7 +211,7 @@
                                 <span class="job translate es">Desarrollador Web</span>
                             </div>
                             <div class="text">
-                                <p class="translate en active">I am a passionate <span class="pop-text">Fullstack Web
+                                <p class="translate en active">I am a passionate <span class="pop-text" id="pop-text">Fullstack Web
                                         Developer</span> with experience creating interactive websites and applications.
                                     I specialize in both frontend development, using technologies such as HTML, CSS and
                                     JavaScript, and backend development, working with frameworks such as Node.js and

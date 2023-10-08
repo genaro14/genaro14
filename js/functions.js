@@ -18,6 +18,7 @@ btnSwitch.addEventListener("click", () => {
   darkerClass("card");
   toggleDescriptionDarkClass();
   toggleDateColor();
+  togglePopColor();
   // toggleBackgroundCards();
 });
 
@@ -78,6 +79,17 @@ function toggleDateColor() {
           element.classList.add("role__dark");
       }
   });
+}
+
+function togglePopColor() {
+  let pop = document.getElementById('pop-text')
+  if (pop) {
+    if (pop.classList.contains('pop-text__dark')){
+      pop.classList.remove('pop-text__dark')
+    } else {
+      pop.classList.add('pop-text__dark')
+    }
+  }
 }
 // Lang switcher 
 const languageSelect = document.getElementById("languageSelector");
@@ -147,7 +159,7 @@ selectedLanguageElements.forEach((element) => {
 
 // if (lang_on.innerHTML == "EN") {
 // change_text.classList.add("en");
-// change_text.classList.remove("spanish");
+// change_text.classList.remove("spanish"); 
 
 // }
 
@@ -168,4 +180,24 @@ let navPos = navbar.getBoundingClientRect().top;
 let menu = document.getElementById("hamburguer");
 window.addEventListener("click", show => {
   console.log('Dropdown Menu');
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const languageMenu = document.getElementById("language-menu");
+
+  hamburgerMenu.addEventListener("click", function () {
+      languageMenu.classList.toggle("active");
+  });
+
+  // Handle language selection
+  const languageLinks = document.querySelectorAll(".language-menu a");
+  languageLinks.forEach((link) => {
+      link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const selectedLang = link.getAttribute("data-lang");
+          // Implement logic to change the website language here
+          console.log(`Language changed to ${selectedLang}`);
+          languageMenu.classList.remove("active");
+      });
+  });
 });
