@@ -92,6 +92,19 @@ function togglePopColor() {
   }
 }
 // Lang switcher 
+
+function removeActiveClassFromTranslateElements() {
+  const translateElements = document.querySelectorAll(".translate");
+  translateElements.forEach((element) => {
+    element.classList.remove("active");
+  });
+}
+function addActiveClassToSelectedLanguageElements(langClass) {
+  const selectedLanguageElements = document.querySelectorAll(`.${langClass}`);
+  selectedLanguageElements.forEach((element) => {
+    element.classList.add("active");
+  });
+}
 const languageSelect = document.getElementById("languageSelector");
 languageSelect.addEventListener("click", function () {
   const flagImage = document.getElementById("flagImage");
@@ -116,18 +129,23 @@ flagDropdown.src = flagImageSwitch;
 currentSelect.textContent = selectedLanguage;
 langDropdown.textContent = selectedLanguage === "Español"? "English" : "Español"
 
-const translateElements = document.querySelectorAll(".translate");
-  translateElements.forEach((element) => {
-    element.classList.remove("active");
-  });
 
-  // Show elements with the selected language class
-const selectedLanguageElements = document.querySelectorAll(`.${langClass}`);
-selectedLanguageElements.forEach((element) => {
-  element.classList.add("active");
-  });
+// const translateElements =  document.querySelectorAll(".translate");
+//   translateElements.forEach((element) => {
+//     element.classList.remove("active");
+//   });
+removeActiveClassFromTranslateElements();
+addActiveClassToSelectedLanguageElements(langClass);
+ 
+// Show elements with the selected language class
+// const selectedLanguageElements = document.querySelectorAll(`.${langClass}`);
+// selectedLanguageElements.forEach((element) => {
+//   element.classList.add("active");
+//   });
 });
-  
+
+
+
 // });
 
 // var english = document.getElementById("en"),
@@ -177,27 +195,28 @@ let navPos = navbar.getBoundingClientRect().top;
       scrollPos = window.scrollY;
     });
 
-let menu = document.getElementById("hamburguer");
-window.addEventListener("click", show => {
-  console.log('Dropdown Menu');
-});
+// Navbar Listeners
+// let selectedLanguageNav = '';
+// const navEs = document.getElementById("lang-es");
+// if (navEs) {
+//   navEs.addEventListener('click', function () {
+//     selectLang("es");
+//   });
+//   console.log("Español select");
+// }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const languageMenu = document.getElementById("language-menu");
+// const navEn = document.getElementById("lang-en");
+// if (navEn) {
+//   navEn.addEventListener('click', function () {
+//     selectLang("en");
+//   });
+//   console.log("Inglés select");
+// }
 
-  hamburgerMenu.addEventListener("click", function () {
-      languageMenu.classList.toggle("active");
-  });
+// removeActiveClassFromTranslateElements();
+// addActiveClassToSelectedLanguageElements(selectedLanguageNav);
 
-  // Handle language selection
-  const languageLinks = document.querySelectorAll(".language-menu a");
-  languageLinks.forEach((link) => {
-      link.addEventListener("click", function (e) {
-          e.preventDefault();
-          const selectedLang = link.getAttribute("data-lang");
-          // Implement logic to change the website language here
-          console.log(`Language changed to ${selectedLang}`);
-          languageMenu.classList.remove("active");
-      });
-  });
-});
+// function selectLang(lang) {
+//   selectedLanguageNav = lang;
+//   console.log('LANG:', lang);
+// }

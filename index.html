@@ -45,16 +45,18 @@
 <body>
     <div class="pos-f-t">
         <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <h4 class="text-white">Language Selector:</h4>
-            <ul class="language-menu" id="language-menu">
-                <li><a href="#" data-lang="en">English</a></li>
-                <li><a href="#" data-lang="es">Español</a></li>
-            </ul>
-            <ul class="dark-mode" id="dark-mode">
-                <li><a href="#" >Light</a></li>
-                <li><a href="#" >Dark</a></li>
-            </ul>
+          <div class="bg-dark p-4 container-nav">
+            <h6 class="text-white">Language:</h6>
+                <div class="floater">
+                    <button class="floater__reset-button"> <img id="lang-en"  src="./flags/en.png" alt="England Flag" width="25px" height="18px"> </button>
+                    <button class="floater__reset-button"> <img  id="lang-es" src="./flags/es.png" alt="Spain Flag" width="25px" > </button>
+                </div>
+                <hr>
+            <h6 class="text-white">Color:</h6>
+            <div class="floater">
+                <button class="floater__reset-button floater__reset-button-lang" id="color-light"><a href="#" >Light</a></button>
+                <button class="floater__reset-button floater__reset-button-lang" id="color-dark"><a href="#" >Dark</a></button>
+            </div>
             
           </div>
         </div>

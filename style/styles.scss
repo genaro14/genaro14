@@ -3,30 +3,55 @@
 body {
     margin-top: 0;
 }
-
 * {
     box-sizing: border-box;
     transition: 0.5s ease;
 }
-.language-menu {
-    // display: none;
-    list-style: none;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
+.container-nav {
+display: flex;
+flex-direction: column;
 
-.language-menu li {
-    margin-bottom: 5px;
-}
+    .language-menu {
+        // display: none;
+        list-style: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
 
-/* Show the language menu when the hamburger menu is clicked */
-.menu.active .language-menu {
-    display: block;
+    .language-menu li {
+        margin-bottom: 5px;
+    }
+
+    /* Show the language menu when the hamburger menu is clicked */
+    .menu.active .language-menu {
+        display: block;
+    }
+    .floater {
+        margin-right: 20px;
+        display: flex;
+        flex-direction: row;
+        &__reset-button {
+            all: initial;
+            margin-left: 3px;
+            border: 2px solid #FFF;
+            a {
+                text-decoration: none;
+                color: #FFF;
+                padding: 7px;
+            }
+        }
+        &__reset-button-lang {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-family: inherit;
+            }
+    }
+        
 }
 .base-wrapper {
     @include font('Montserrat', 18px, 4px, 500, 28px);
