@@ -351,6 +351,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex: row;
+  z-index: 3;
 }
 .base-wrapper .mainpart .sticky + .content {
   padding-top: 60px;
