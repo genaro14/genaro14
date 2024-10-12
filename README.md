@@ -1,28 +1,35 @@
-# GENARO PENNONE
+<h1> Genaro Pennone </h1>
 
-Hi!,  I'm a **Fullstack developer**, committed to contributing to innovative and efficient development teams.  &nbsp;    
+<h2 align="left">Hi! I'm a <strong>Fullstack Developer</strong>, committed to contributing to innovative and efficient development teams.</h2>
+
+
+Currently i am working at [Portinos ](https://agencia.portinos.com/)
 
 You probably want to go see my page here: &#12299;[Site](https://genaro14.github.io/genaro14/),    
-or you can contact me on: [genaropennone@gmail.com](mailto:genaropennone@gmail.com)  
-----
-### Some technologies i like to use:
-![languages](https://img.shields.io/static/v1?label=&message=languages:&color=111&style=flat-square)
-![Javascript](https://img.shields.io/static/v1?logo=javascript&label=&message=javascript&color=36465D&logoColor=AAA&style=flat-square)
-![Html](https://img.shields.io/static/v1?logo=html5&label=&message=html&color=36465D&logoColor=AAA&style=flat-square)
-![Css](https://img.shields.io/static/v1?logo=css3&label=&message=css&color=36465D&logoColor=AAA&style=flat-square)
-![PHP](https://img.shields.io/static/v1?logo=php&label=&message=PHP&color=36465D&logoColor=AAA&style=flat-square)
-&nbsp;&nbsp;&nbsp;
+<img align="right" height="150" src="https://media.giphy.com/media/Z1BTGhofioRxK/giphy.gif?cid=790b7611zv0mufg5qj9945m2eivz0nsnb0f00m2w1nj2gp8x&ep=v1_gifs_search&rid=giphy.gif&ct=g"  />
 
-![tools](https://img.shields.io/static/v1?label=&message=tools:&color=111&style=flat-square)
-![docker](https://img.shields.io/static/v1?logo=docker&label=&message=docker&color=36465D&logoColor=AAA&style=flat-square)
-![git](https://img.shields.io/static/v1?logo=git&label=&message=git&color=36465D&logoColor=AAA&style=flat-square)
+# 💻 Tech Stack:
+![Javascript](https://img.shields.io/badge/javascript-%23404d59.svg?style=for-the-badge&logo=javascript) 
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=white) 
+![Node.js](https://img.shields.io/badge/node.js-%23404d59.svg?style=for-the-badge&logo=node.js&logoColor=white) 
+![PHP](https://img.shields.io/badge/PHP-%23404d59.svg?style=for-the-badge&logo=php&logoColor=white) 
+![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+<br clear="both">
 
-----
+![tools](https://img.shields.io/static/v1?style=for-the-badge&label=&message=tools:&color=111)
+![docker](https://img.shields.io/static/v1?style=for-the-badge&logo=docker&label=&message=docker&color=36465D&logoColor=AAA)
+![git](https://img.shields.io/static/v1?style=for-the-badge&logo=git&label=&message=git&color=36465D&logoColor=AAA)
+<div align="left">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=genaro14&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
+</div>
+
 <a href="https://linkedin.com/in/genaro14">
-  <img align="left" alt="Genaro's LinkedIn" width="20px" src="https://simpleicons.now.sh/linkedin/495f7e" />
+  <img align="left" alt="Genaro's LinkedIn" src="https://img.shields.io/static/v1?style=for-the-badge&logo=linkedin&label=&message=LinkedIn&color=0077B5&logoColor=FFFFFF" />
 </a>
 <a href="mailto:genaropennone@gmail.com">
-  <img align="left" alt="Genaro's Email address" width="20px" src="https://simpleicons.now.sh/gmail/495f7e" />
+  <img align="left" alt="Genaro's Email address" src="https://img.shields.io/static/v1?style=for-the-badge&logo=gmail&label=&message=Email&color=DB4437&logoColor=FFFFFF" />
 </a>
 
-
+<br clear="both">
+    
+[![](https://visitcount.itsvg.in/api?id=genaro14&icon=0&color=0)](https://visitcount.itsvg.in)
