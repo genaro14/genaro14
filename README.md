@@ -1,14 +1,13 @@
-<h1> Genaro Pennone </h1>
+# Genaro Pennone
+<br clear="both">
 
-<h2 align="left">Hi! I'm a <strong>Fullstack Developer</strong>, committed to contributing to innovative and efficient development teams.</h2>
-
+Hi!,  I'm a **Fullstack developer**, committed to contributing to innovative and efficient development teams.     
 
 Currently i am working at [Portinos ](https://agencia.portinos.com/)
-
-You probably want to go see my page here: &#12299;[Site](https://genaro14.github.io/genaro14/),    
+<br clear="both">
+You probably want to go see my page here: [Site](https://genaro14.github.io/genaro14/)
 <img align="right" height="150" src="https://media.giphy.com/media/Z1BTGhofioRxK/giphy.gif?cid=790b7611zv0mufg5qj9945m2eivz0nsnb0f00m2w1nj2gp8x&ep=v1_gifs_search&rid=giphy.gif&ct=g"  />
-
-# 💻 Tech Stack:
+ <h3>💻 Tech Stack:</h3>
 ![Javascript](https://img.shields.io/badge/javascript-%23404d59.svg?style=for-the-badge&logo=javascript) 
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=white) 
 ![Node.js](https://img.shields.io/badge/node.js-%23404d59.svg?style=for-the-badge&logo=node.js&logoColor=white) 
